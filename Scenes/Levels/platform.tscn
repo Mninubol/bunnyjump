@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://StaticBody2D.gd" type="Script" id=1]
+[ext_resource path="res://GFX/Environment/ground_cake.png" type="Texture" id=2]
+
+[node name="StaticBody2D" type="StaticBody2D"]
+script = ExtResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="."]
+texture = ExtResource( 2 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PoolVector2Array( -172.595, -49.0573, 176.673, -48.1548, 191.113, -35.5198, 192.918, -18.3723, 159.525, 34.8753, -159.96, 44.8028, -165.375, 39.3878, -192.45, -17.4698, -187.937, -40.0323 )
