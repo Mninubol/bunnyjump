@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://StaticBody2D.gd" type="Script" id=1]
+[ext_resource path="res://GFX/Enemies/cloud.png" type="Texture" id=2]
+
+[node name="platform cake" type="StaticBody2D"]
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( -1.04752, -1.04751 )
+scale = Vector2( 0.950994, 0.924578 )
+texture = ExtResource( 2 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+position = Vector2( 0.0805171, 1.44535 )
+scale = Vector2( 0.642508, 1.31365 )
+polygon = PoolVector2Array( -84.3906, -31.4662, -59.1601, -44.6292, -12.0633, -49.5653, 19.8953, -44.6292, 53.5359, -29.8208, 83.8125, -28.5868, 104.838, -22.4166, 130.068, -12.5444, 139.32, 1.85261, 179.688, 7.61142, 191.462, 19.5404, 186.416, 29.4126, 99.7918, 38.4622, -8.69922, 47.1004, -112.144, 40.1075, -190.359, 29.824, -192.882, 13.3702, -179.425, 1.02993, -153.354, -10.4877, -134.011, -13.7784, -118.872, -25.7074 )

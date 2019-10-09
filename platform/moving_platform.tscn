@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://platform/moving_platform.gd" type="Script" id=1]
+[ext_resource path="res://GFX/mmmmm/Enemies/fishBlue.png" type="Texture" id=2]
+
+[node name="moving_platform" type="Node2D"]
+position = Vector2( 300, 0 )
+script = ExtResource( 1 )
+
+[node name="platform" type="RigidBody2D" parent="."]
+mode = 3
+
+[node name="Sprite" type="Sprite" parent="platform"]
+position = Vector2( 6.63419, 36.8197 )
+scale = Vector2( 1.58049, 1.56494 )
+texture = ExtResource( 2 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="platform"]
+position = Vector2( 1.63115, 45.8148 )
+scale = Vector2( 1.15997, 3.26761 )
+polygon = PoolVector2Array( -82.2069, -30.1659, 92.803, -29.8447, 91.0872, 25.7177, -81.6349, 25.0754 )

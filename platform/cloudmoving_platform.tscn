@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://platform/moving_platform.gd" type="Script" id=1]
+[ext_resource path="res://GFX/Enemies/cloud.png" type="Texture" id=2]
+
+[node name="moving_platform" type="Node2D"]
+position = Vector2( 300, 0 )
+script = ExtResource( 1 )
+
+[node name="platform" type="RigidBody2D" parent="."]
+mode = 3
+
+[node name="Sprite" type="Sprite" parent="platform"]
+modulate = Color( 0.648438, 0.648438, 0.648438, 1 )
+position = Vector2( 118.739, -25.8119 )
+scale = Vector2( 2.44284, 2.49974 )
+texture = ExtResource( 2 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="platform"]
+position = Vector2( 106.245, -19.244 )
+scale = Vector2( 3.83281, 6.07168 )
+polygon = PoolVector2Array( -68.5822, -2.87173, -54.488, -7.5225, -48.4019, -15.813, -32.0654, -18.0373, -17.9712, -27.7432, -2.27539, -29.7653, 13.7407, -27.3388, 24.2919, -19.0129, 51.7556, -14.6331, 62.452, -0.216215, 82.2898, 2.58787, 86.1337, 17.349, 46.4137, 23.6174, 0.287193, 26.6505, -43.9174, 24.6285, -79.1529, 18.36, -78.1919, 6.83422 )
